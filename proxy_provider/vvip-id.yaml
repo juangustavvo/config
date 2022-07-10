@@ -1,0 +1,31 @@
+proxies:
+
+- name: BIZNET
+  server: lms.uin-antasari.ac.id
+  port: 443
+  type: trojan
+  password: juan142
+  network: ws
+  sni: biznet12.nextvpn.cc
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /vpnneo
+  headers:
+    Host: biznet12.nextvpn.cc
+  interface-name: eth0.2000
+  
+- name: TROJAN ARGON 1
+  server: lms.uin-antasari.ac.id
+  port: 443
+  type: trojan
+  password: ff4d6ac0-ff22-11ec-8080-1577c1651679
+  network: ws
+  sni: id-argontj.bypass.id
+  skip-cert-verify: false
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: id-argontj.bypass.id
+  interface-name: eth0.2000

@@ -1,0 +1,16 @@
+proxies:
+
+- name: TROJAN ARGON 1
+  server: lms.uin-antasari.ac.id
+  port: 443
+  type: trojan
+  password: ef659b60-ff20-11ec-b3f1-1577c1651679
+  network: ws
+  sni: id-game.bypass.id
+  skip-cert-verify: false
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: id-game.bypass.id
+  interface-name: eth0.2000

@@ -1,0 +1,16 @@
+proxies:
+
+- name: TROJAN OVH
+  server: lms.uin-antasari.ac.id
+  port: 443
+  type: trojan
+  password: 61beaff0-ff23-11ec-8504-1577c1651679
+  network: ws
+  sni: sg-ovh.bypass.id
+  skip-cert-verify: false
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-ovh.bypass.id
+  interface-name: eth0.2000
